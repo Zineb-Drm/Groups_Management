@@ -47,7 +47,7 @@ export default function Group(){
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error}</p>;
     return(
-        <>
+        <div className="container">
         <input type="number" value={GrId} placeholder="ID"
         onChange={(e)=>setGrid(e.target.value)}/>
         <input type="text" value={GrNom}  placeholder="Group Name"
@@ -56,7 +56,7 @@ export default function Group(){
         <h1> Groups</h1>
         <table>
             <thead>
-                <tr><th>ID</th> <th>Name </th><th>Operation</th><th>Listes</th></tr>
+                <tr><th>ID</th> <th>Name </th><th>Operation</th><th>Lists</th></tr>
             </thead>
             <tbody>
                 {listGroup.map((grp,index)=>
@@ -68,13 +68,13 @@ export default function Group(){
                         <button onClick={() => modifier(grp.id)}>Update </button>
                     </td>
                     <td>
-                        <Link to={"/liste/"+grp.groupNom} style={{ textDecoration: "none" }}>Liste of {grp.groupNom}</Link>
+                        <Link to={"/liste/"+grp.groupNom} style={{ textDecoration: "none" }}>List of {grp.groupNom}</Link>
                     </td>
                 </tr>
                 )}
             </tbody>
         </table>
         
-        </>
+        </div>
     )
 }

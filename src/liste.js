@@ -50,12 +50,12 @@ export default function Liste(){
   
     
     return(
-        <>
+        <div className='container'>
         Searsh By Name:
         
         <input type="text" value={searchTerm}  onChange={(e)=>dispatch(setSearchTerm(e.target.value))} />
       
-        <h1>liste des etudiants du groupe:{nom}</h1>
+        <h1>{nom} Students list</h1>
         <table>
             <thead>
                 <tr><th>ID Student</th> <th>Name </th><th>Overall Average </th><th>Operation</th></tr>
@@ -75,6 +75,6 @@ export default function Liste(){
         <h1>Students Number : {listGroup.length}</h1>
         <Link to="/">Return Back</Link>
 
-        </>
+        </div>
     )
 }

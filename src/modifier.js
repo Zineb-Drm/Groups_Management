@@ -39,8 +39,8 @@ export default function Modifier() {
     };
 
     return (
-        <div>
-             <h2>Modifier le groupe</h2>
+        <div className="container">
+             <h2>Updating Group</h2>
             <input type="text" value={groupId} placeholder="ID" onChange={(e) => setGroupId(e.target.value)} />
             <input type="text" value={groupNom} placeholder="Group Name" onChange={(e) => setGroupNom(e.target.value)} />
             <button onClick={updateGroup}>Save</button>
