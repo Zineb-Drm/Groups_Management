@@ -1,0 +1,28 @@
+body{
+  color: rgb(5, 5, 46);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    background-color: #a5cfed; 
+    padding: 10px 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  
+  .navbar a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    font-size: 18px; 
+    font-weight: bold;
+    margin-right: 20px; 
+    transition: color 0.3s ease; 
+  }
+  
+  
+  .navbar a:hover {
+    color: #FFD700; 
+  }
+  
