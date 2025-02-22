@@ -53,7 +53,7 @@ export default function Group(){
         <input type="text" value={GrNom}  placeholder="Group Name"
         onChange={(e)=>setGrnom(e.target.value)}/>
         <button onClick={ajoute}>Add</button>  
-        <h1>liste des Groups</h1>
+        <h1> Groups</h1>
         <table>
             <thead>
                 <tr><th>ID</th> <th>Name </th><th>Operation</th><th>Listes</th></tr>
